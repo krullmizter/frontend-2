@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>All Fun & Games!</title>
+    <link rel="shortcut icon" href="../images/favicon.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css?family=Rubik:400,500&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="../css/variables.css">
+    <link rel="stylesheet" href="../css/base.css">
+    <link rel="stylesheet" href="../css/typo.css">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header>
+        <a href="../report/index.html">The report</a>
+    </header>
+    <main>
+        <div class="row">
+            <div class="col">
+
+                <div id="vpn">
+                    <h2>Task 1 - VPN</h2>
+                    <h4>We got your information!</h4>
+
+                    <ul>
+                        <li>IP: <span id="ip"></span></li>
+                        <li>OS: <span id="os"></span></li>
+                        <li>Browser: <span id="browserType"></span></li>
+                        <li>Resolution & Size: <span id="browserSize"></span></li>
+                        <li>Geolocation: <span id="browserGeo"></span></li>
+                    </ul>
+
+                    <h6>Use our #1 VPN service: <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">HackerVPN</a> to ensure your security</h6>
+                </div>
+            </div>
+
+            <div class="col">
+                <div id="memory">
+                    <h2>Task 2 - Memory</h2>
+                    <div class="memoryRow">
+                        <div id="card1" class="card">
+                            <div class="frontface samuel"></div>
+                            <div class="backface"></div>
+                        </div>
+
+                        <div id="card2" class="card">
+                            <div class="frontface arcada"></div>
+                            <div class="backface"></div>
+                        </div>
+
+                        <div id="card3" class="card">
+                            <div class="frontface torvalds"></div>
+                            <div class="backface"></div>
+                        </div>
+
+                        <div id="card4" class="card">
+                            <div class="frontface pewdiepie"></div>
+                            <div class="backface"></div>
+                        </div>
+                    </div>
+
+                    <div class="memoryRow">
+                        <div id="card5" class="card">
+                            <div class="frontface gandalf"></div>
+                            <div class="backface"></div>
+                        </div>
+
+                        <div id="card6" class="card">
+                            <div class="frontface torvalds"></div>
+                            <div class="backface"></div>
+                        </div>
+
+                        <div id="card7" class="card">
+                            <div class="frontface gandalf"></div>
+                            <div class="backface"></div>
+                        </div>
+
+                        <div id="card8" class="card">
+                            <div class="frontface koira"></div>
+                            <div class="backface"></div>
+                        </div>
+                    </div>
+
+                    <div class="memoryRow">
+                        <div id="card9" class="card">
+                            <div class="frontface pewdiepie"></div>
+                            <div class="backface"></div>
+                        </div>
+
+                        <div id="card10" class="card">
+                            <div class="frontface koira"></div>
+                            <div class="backface"></div>
+                        </div>
+
+                        <div id="card11" class="card">
+                            <div class="frontface samuel"></div>
+                            <div class="backface"></div>
+                        </div>
+
+                        <div id="card12" class="card">
+                            <div class="frontface arcada"></div>
+                            <div class="backface"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="row">
+            <div class="col">
+                <div id="gallery">
+                    <h2>Task 3 - Gallery</h2>
+                    <p>Put your mouse over the thumbnails, and click the selected image.</p>
+                    <img id="mainImage" src="../images/samuel.jpg" alt="" width="200" />
+
+                    <div id="galleryImages">
+                        <img src="../images/samuel.jpg" height="111.35" id="samuelImg" class="tester"/>
+                        <img src="../images/torvalds.jpg" width="80" id="torvaldsImg" class="tester"/>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div id="stopwatch">
+                    <h2>Task 4 - Stopwatch</h2>
+                    <p>Press left mouse button to start & stop the watch. Press right mouse button to capture meantime.</p>
+                    <p id="time">00:00:00</p>
+                    <ul id="timeList"></ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col">
+                <div id="paint">
+                    <h2>Task 5 - Paint</h2>
+                    <canvas id="canvas" width="200" height="100"></canvas>
+                </div>
+            </div>
+
+            <div class="col">
+                <div id="game">
+                    <h2>Task 6 - Rock, Paper, Scissors</h2>
+                    <input type="button" id="gameButton" value="Play!" />
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col">
+                <div id="puzzle">
+                    <h2>Task 7 - Puzzle</h2>
+
+                    <div id="puzzleTargets">
+                        <div id="target1" ondragover="allowDrop(event)" ondrop="drop(event)"></div>
+                        <div id="target2" ondragover="allowDrop(event)" ondrop="drop(event)"></div>
+                    </div>
+
+                    <img id="piece1" src="../images/puzzle1.png" draggable="true" ondragstart="drag(event)" width="100" />
+                    <img id="piece2" src="../images/puzzle2.png" draggable="true" ondragstart="drag(event)" width="100" />
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+<script src="../js/script.js"></script>
+<script src="https://api.ipify.org?format=jsonp&callback=getIP"></script>
+</html>

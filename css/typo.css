@@ -1,0 +1,68 @@
+body {
+    font-family: 'Rubik', sans-serif;
+}
+
+h1 {
+    font-size: 4.75rem;
+}
+
+h2 {
+    font-size: 4rem;
+}
+
+h3 {
+    font-size: 3rem;
+}
+
+h4 {
+    font-size: 2.8rem;
+}
+
+h5 {
+    font-size: 2.6rem;
+}
+
+h6 {
+    font-size: 2.2rem;
+}
+
+h1,
+h2,
+h3 {
+    text-transform: uppercase;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    color: var(--primary);
+    margin: 1.75rem 0;
+}
+
+p,
+a,
+li,
+input {
+    font-size: 2rem;
+    color: var(--white);
+}
+
+input[type="button"] {
+    background-color: var(--primary);
+    border: none;
+    padding: 5px;
+    cursor: pointer;
+}
+
+ul {
+    padding: 0;
+    text-align: initial;
+}
+
+li {
+    list-style: none;
+}
